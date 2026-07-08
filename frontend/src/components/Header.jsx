@@ -1,7 +1,19 @@
+import { useState } from "react";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 
 function Header(){
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
+    const isActive = ({ isActive }) => (isActive ? "text-[#39338b]" : "");
    
     return (
         <header className="flex items-center gap-2 justify-between py-5 px-5 z-30 fixed w-full bg-white shadow md:px-12 md:py-6 ">
@@ -45,8 +57,72 @@ function Header(){
 
             {/* hamburger menu */}
             <div className="lg:hidden">
-                <i className="fa-solid fa-bars text-2xl primary-color"></i>
+                <button onClick={toggleMenu} className="text-2xl primary-color focus:outline-none">
+                    <i className={`fa-solid ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                </button>
             </div>
+
+            {/* Mobile menu */}
+            {isMenuOpen && (
+                <nav className="absolute top-full left-0 right-0 bg-white shadow-lg lg:hidden flex flex-col gap-4 p-5 sansation-regular primary-color text-lg">
+                    <NavLink 
+                        to="/" 
+                        end 
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        onClick={closeMenu}
+                    >
+                        Home
+                    </NavLink>
+
+                    <NavLink 
+                        to="about" 
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        onClick={closeMenu}
+                    >
+                        About Us
+                    </NavLink>
+
+                    <NavLink 
+                        to="contact" 
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        onClick={closeMenu}
+                    >
+                        Programs
+                    </NavLink>
+
+                    <NavLink 
+                        to="contact" 
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        onClick={closeMenu}
+                    >
+                        Teachers
+                    </NavLink>
+
+                    <NavLink 
+                        to="contact" 
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        onClick={closeMenu}
+                    >
+                        Gallery
+                    </NavLink>
+
+                    <NavLink 
+                        to="contact" 
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        onClick={closeMenu}
+                    >
+                        Contact
+                    </NavLink>
+
+                    <NavLink 
+                        to="contact" 
+                        className="hover:text-[#39338b] ease-in"
+                        onClick={closeMenu}
+                    >
+                        Register
+                    </NavLink>
+                </nav>
+            )}
 
         </header>
     );
