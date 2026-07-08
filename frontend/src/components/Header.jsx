@@ -68,7 +68,7 @@ function Header(){
                     <NavLink 
                         to="/" 
                         end 
-                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
                         Home
@@ -76,7 +76,7 @@ function Header(){
 
                     <NavLink 
                         to="about" 
-                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
                         About Us
@@ -84,7 +84,7 @@ function Header(){
 
                     <NavLink 
                         to="contact" 
-                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
                         Programs
@@ -92,7 +92,7 @@ function Header(){
 
                     <NavLink 
                         to="contact" 
-                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
                         Teachers
@@ -100,7 +100,7 @@ function Header(){
 
                     <NavLink 
                         to="contact" 
-                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
                         Gallery
@@ -108,7 +108,7 @@ function Header(){
 
                     <NavLink 
                         to="contact" 
-                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-2 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in"}
+                        className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
                         Contact
