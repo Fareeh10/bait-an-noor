@@ -116,7 +116,7 @@ function Header(){
 
                     <NavLink 
                         to="contact" 
-                        className="hover:text-[#39338b] ease-in"
+                        className="hover:text-[#39338b] ease-in px-2"
                         onClick={closeMenu}
                     >
                         Register
