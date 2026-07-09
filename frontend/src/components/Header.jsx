@@ -83,7 +83,7 @@ function Header(){
                     </NavLink>
 
                     <NavLink 
-                        to="contact" 
+                        to="programs" 
                         className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
@@ -91,7 +91,7 @@ function Header(){
                     </NavLink>
 
                     <NavLink 
-                        to="contact" 
+                        to="teachers" 
                         className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
@@ -99,7 +99,7 @@ function Header(){
                     </NavLink>
 
                     <NavLink 
-                        to="contact" 
+                        to="gallery" 
                         className={({ isActive }) => isActive ? "bg-[#BF8B28] text-white -m-2 px-4 py-1 rounded ease-in" : "hover:text-[#39338b] ease-in px-2"}
                         onClick={closeMenu}
                     >
@@ -115,7 +115,7 @@ function Header(){
                     </NavLink>
 
                     <NavLink 
-                        to="contact" 
+                        to="register" 
                         className="hover:text-[#39338b] ease-in px-2"
                         onClick={closeMenu}
                     >
